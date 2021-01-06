@@ -22,7 +22,7 @@
             done: idx < activeIndex,
             'steps-item': true,
           }">
-            <span>{{ ++idx }}</span> {{ step.title }}
+            <span>{{ idx + 1 }}</span> {{ step.title }}
           </li>
         </ul>
         <button class="btn" v-if="isFinished" @click="toStart">Начать заново</button>
